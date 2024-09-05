@@ -15,6 +15,9 @@ const CreateTask = () => {
                 description: text, done: false
             })
         })
+        if(res.ok){
+            setText("");
+        }
     }catch(error){
         console.log(error)
     }   

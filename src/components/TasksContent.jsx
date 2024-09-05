@@ -62,7 +62,7 @@ const TasksContent = ({ tasks, setTasks }) => {
               onChange={() => handleOnChange(task.id, task.done)} // Use onChange instead of onClick
               checked={task.done}
             />
-            <p>{task.description}</p>
+            <p className={`text-gray-900 ${task.done ? "line-through text-gray-600" : ""}`}>{task.description}</p>
             <button onClick={() => handleDelete(task.id)}>
               <i className="fa-solid fa-trash text-red-500"></i>
             </button>
