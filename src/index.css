@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.wholeDiv::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+.wholeDiv::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
